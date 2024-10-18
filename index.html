@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="karakter.css" type="text/css"/>
+    <title>Hola, Prambanan!</title>
+</head> 
+
+<body>
+    <marquee class="heyyo">Selamat Datang Di Dunia Hola, Prambanan!</marquee>
+</body>
+
+<body>
+    <div>
+    <div class="hey1"><h1><b>Selamat Datang Di Dunia Hola, Prambanan!</b></h1></div>
+    <center><h4 class="hey2">Disini kalian akan mengenal para tokoh-tokoh, yang bisa menebak karakter tokoh mana yang cocok dengan diri kalian!!</h4></center>
+    </div>
+
+    <div class="container"> by astrokyn
+        <h1><i class="fas fa-magic"></i>Cek Karaktermu</h1>
+        <div class="form-group">    
+            <label for="name">Masukkan Namamu :</label>
+            <input type="text" id="name" placeholder="Namamu">
+        </div>
+        <button id="checkButton"><i class="fas fa-search"></i> Cek Karakter</button>
+        <div id="result" class="result"></div>
+    </div>
+    <script src="karakter.js"></script>
+    
+<div class="mouse-trail"></div>
+<script>
+    document.addEventListener("mousemove", function (e) {
+        const trail = document.createElement("div");
+        trail.classList.add("mouse-trail");
+        trail.style.left = e.pageX + 'px';
+        trail.style.top = e.pageY + 'px';
+        
+        document.body.appendChild(trail);
+        // Remove the heart after the animation is complete
+        setTimeout(() => {
+            trail.remove();
+        }, 1000); // Duration of the fade-out effect (1 second)
+    });
+</script>
+</body>
+</html>

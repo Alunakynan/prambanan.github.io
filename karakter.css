@@ -1,0 +1,145 @@
+body {
+    background-image: url('ky2.jpeg');
+    /* background-repeat: no-repeat; */
+    background-size: contain;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: bisque;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: top;
+    align-items: center;
+    height: 100vh;
+}
+
+.heyyo {
+    color: rgb(199, 188, 153);
+    text-shadow: 1px 1px 3px rgb(180, 165, 119);
+}
+
+.hey1 {
+    color: burlywood;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 45px;
+    text-align: center;
+    text-decoration: overline underline;
+    text-decoration-style: solid;
+    text-shadow: 0 2px 3px rgb(4, 73, 64);
+}
+
+.hey2 {
+    color: rgb(3, 3, 100);
+    text-shadow: 1px 1px 5px rgb(166, 233, 233);
+    font-size: medium;
+}
+
+.container {
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 3);
+    text-align: center;
+    width: 350px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #a39d6f;
+    font-weight: 500;
+}
+
+input {
+    width: 90px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+button {
+    background-color: rgb(107, 197, 197);
+    color: #575151;
+    border: navajowhite;
+    padding: 12px 20px;
+    border-radius: 5pt;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 500;
+    transition: background-color 0.3s, transition 0.3s;
+}
+
+button:hover {
+    background-color: rgb(107, 197, 197);
+    transform: translateY(-3px);
+    box-shadow: 2px 5px 8px -1px #000000;
+    text-decoration: none;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #CDC2A5;
+    font-weight: 500;
+}
+
+.result strong {
+    color: aquamarine;
+}
+
+.mouse-trail {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    background-color: #cf6a3f; /* The color of the heart */
+    transform: rotate(-30deg); /* Rotate to create the bottom part of the heart */
+    transform-origin: center;
+    border-radius: 50% 50% 0 0; /* Rounded top for the heart */
+    pointer-events: none;
+    z-index: 9999; 
+    animation: fadeOut 3s forwards;
+}
+
+.mouse-trail::before,
+.mouse-trail::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #cf6a3f;
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Horizontal, Vertical, Blur, Color */
+}
+
+.mouse-trail::before {
+    top: -5.5px;
+    left: 0;
+}
+
+.mouse-trail::after {
+    left: 5.5px;
+    top: 0;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
